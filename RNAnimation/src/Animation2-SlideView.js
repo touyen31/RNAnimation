@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Animated, View, Text } from 'react-native'
+import { Animated, View, Text, Easing } from 'react-native'
 
 export default class Animation2 extends Component {
   constructor( props ) {
@@ -13,7 +13,8 @@ export default class Animation2 extends Component {
       this.state.SlideAnim,
       {
         toValue:0,
-        duration:3000
+        duration:3000,
+        easing: Easing.bounce
       }
     ).start()
   }
