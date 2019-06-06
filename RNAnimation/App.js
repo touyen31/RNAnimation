@@ -6,7 +6,8 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { View } from 'react-native'
 import Animation1 from './src/Animation1';
 import Animation2 from './src/Animation2-SlideView';
 import MixAnimation from './src/MixAnimation';
@@ -16,7 +17,9 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <TransformView/>
+      <View style={{flex:1,justifyContent:'center', alignItems:'center'}}>
+        <TransformView />
+      </View>
     );
   }
 }
